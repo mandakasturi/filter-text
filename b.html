@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image{
+            position: relative;
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+        }
+        .overlay-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(50);
+            color: yellow;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .filter-blur{
+            filter: blur(2px);
+        }
+        .filter-brightness{
+            filter: brightness(200%);
+        }
+        .filter-contrast{
+            filter: contrast(-300%);
+        }
+        .filter-grayscale{
+            filter: grayscale(100%);
+        }
+        .filter-saturate{
+            filter: saturate(7);
+        }
+        .filter-sepia{
+            filter: sepia(100%);
+        }
+        .filter-huerotate{
+            filter: hue-rotate(180deg);
+        }
+        .filter-invert{
+            filter: invert(70%);
+        }
+        .filter-opacity{
+            filter: opacity(50%);
+        }
+        .filter-shadow{
+            filter: drop-shadow(8px 8px 10px red);
+        }
+        .image:hover .overlay-text{
+            opacity: 1;
+        }
+        .image:hover .image{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="pexels-photo.jpeg" alt="image1" class="image filter-blur">
+            <p class="overlay-text">This is image 1</p>
+        </div>
+        <div class="image">
+            <img src="pexels-photo.jpeg" alt="image1" class="image filter-brightness">           
+            <p class="overlay-text">This is image 2</p>
+        </div>
+        <div class="image">
+            <img src="pexels-photo.jpeg" alt="image1" class="image filter-contrast">
+            <p class="overlay-text">This is image 3</p>
+        </div>
+        <div class="image">
+            <img src="pexels-photo.jpeg" alt="image1" class="image filter-grayscale">
+            <p class="overlay-text">This is image 4</p>
+        </div>
+        <div class="image">
+            <img src="pexels-photo.jpeg" alt="image1" class="image filter-saturate">
+            <p class="overlay-text">This is image 5</p>
+        </div>
+        <div class="image">
+            <img src="pexels-photo.jpeg" alt="image1" class="image filter-sepia">
+            <p class="overlay-text">This is image 6</p>
+        </div>
+        <div class="image">
+            <img src="pexels-photo.jpeg" alt="image1" class="image filter-huerotate">
+            <p class="overlay-text">This is image 7</p>
+        </div>
+        <div class="image">
+            <img src="pexels-photo.jpeg" alt="image1" class="image filter-invert">
+            <p class="overlay-text">This is image 8</p>
+        </div>
+        <div class="image">
+            <img src="pexels-photo.jpeg" alt="image1" class="image filter-opacity">
+            <p class="overlay-text">This is image 9</p>
+        </div>
+        <div class="image">
+            <img src="pexels-photo.jpeg" alt="image1" class="image filter-shadow">
+            <p class="overlay-text">This is image 10</p>
+        </div>
+
+    </div>
+</body>
+</html>
